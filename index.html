@@ -1,12 +1,52 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Duke's Website
 ---
 
-  <ul id="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span>
-      {{post.content}}
-      </li>
-    {% endfor %}
-  </ul>
+<ul id="links">
+  <li>
+    <a href="http://github.com/dukex">
+      &#62208;
+      <span>Github</span>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.linkedin.com/in/dukex">
+      &#62232;
+      <span>LinkedIn</span>
+    </a>
+  </li>
+  <li>
+    <a href="http://twitter.com/_dukex">
+      &#62217;
+      <span>Twitter</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://soundcloud.com/dukex">
+      &#62280;
+      <span>Soundcloud</span>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.flickr.com/photos/dukekhaos/">
+      &#62211;
+      <span>Flickr</span>
+    </a>
+  </li>
+  <li>
+    <a href="http://behance.net/dukex">
+      &#62286;
+       <span>Behance</span>
+    </a>
+  </li>
+</ul>
+
+
+<ul id="posts">
+  {% for post in site.posts %}
+  <li><span>{{ post.date | date_to_string }}</span>
+    {{post.content}}
+  </li>
+  {% endfor %}
+</ul>
