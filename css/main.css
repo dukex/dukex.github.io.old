@@ -77,21 +77,49 @@ body {
   font-size: 30px;
   font-size: 3.0rem;
   line-height: 1.5;
+  background: #FFF;
 }
 
 header {
   text-align: center;
-  background: #4ECDC4;
   z-index: 1;
+  background-image: url("/images/duke-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+#header-wrapper{
+  position: absolute;
+  background: #000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 header h1 {
-  color: #FFF;
+  position: relative;
+  z-index: 3;
+  color: #FC3A51;
   font-weight: 700;
   font-size: 180px;
   font-size: 18.0rem;
   font-family: "Josefin Sans", sans-serif;
-  text-shadow: 1px 1px 1px #41a7a0;
+  text-shadow: 1px 1px 1px #0E2430;
+  width: 100%;
+  background: transparent;
+  margin-top: 15%;
+}
+
+header h2 {
+  color: #0E2430;
+  z-index: 3;
+  position: relative;
 }
 
 header img {
@@ -104,14 +132,13 @@ header img {
 
 #about {
   margin: 0;
-  padding: 10.0rem 25% 0;
-  background: #FF6B6B;
+  padding: 3rem 25% 0;
   font-size: 2.0rem;
-  color: #FFF;
+  color: #0E2430;
 }
 
 #about a {
-  color: #FFF;
+  color: #000;
 }
 
 #links {
@@ -127,7 +154,7 @@ header img {
 }
 
 #links li a {
-  color: #FFF;
+  color: #F5B349;
   font-family: "Entypo Social";
   font-size: 45px;
   text-decoration: none;
@@ -140,40 +167,27 @@ header img {
   font-size: 0.2rem;
 }
 
-#index_projects{
-  position: fixed;
-  width: 200px;
-  top: 50%;
-  left: 5px;
-  list-style: none;
-  padding: 1.0rem;
-  font-size: 1.3rem;
-}
 
-#index_projects li {
-  margin: .5rem 0;
-  border-bottom: 1px solid #D86C6C;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 200px;
-}
-
-#index_projects a{
-  color: #000;
-  text-decoration: none;
-  padding: 0 10px;
-  line-height: 2.0rem;
+h2 {
+  margin-top: 8.5rem;
+  border-bottom:1px solid #0E2430;
+  padding: 0;
+  text-align: center;
 }
 
 #projects {
   margin-top: 8.5rem;
+
+}
+
+#projects .description {
   padding: 0 25%;
 }
 
 #projects h3 {
   font-size: 2.5rem;
   border-bottom: 1px solid #CCC;
+  margin-bottom: 2.5rem;
 }
 
 #projects h3 a {
@@ -189,7 +203,7 @@ header img {
 #projects li {
   font-size: 22px;
   font-size: 2.2rem;
-  margin: 4rem 0;
+  margin: 10rem 0;
 }
 
 footer {
