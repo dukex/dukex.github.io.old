@@ -50,10 +50,11 @@ title: Duke's Website
 <ul id="projects">
   {% for post in site.posts %}
   <li>
-    <h3 id="{{post.slug}}"><a href="#{{post.slug}}">{{post.title}}<a> <a class="external" href="http://{{post.link}}">({{post.link}})</a></h3>
+    <h3 id="{{post.slug}}"><a href="#{{post.slug}}">{{post.title}}</a></h3>
     <div  class='description'>
       {{post.content}}
     </div>
+    <a class="external" href="http://{{post.link}}">({{post.link}})</a>
   </li>
   {% endfor %}
 </ul>
